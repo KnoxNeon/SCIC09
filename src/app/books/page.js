@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import BookCard from '@/components/BookCard'
 
-export default function Books() {
+function BooksContent() {
   const searchParams = useSearchParams()
   const [books, setBooks] = useState([])
   const [loading, setLoading] = useState(true)
@@ -220,5 +220,30 @@ export default function Books() {
         )}
       </div>
     </div>
+  )
+}
+
+export default function Books() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center animate-fadeInUp">
+            <div className="bg-white rounded-3xl shadow-elegant p-12 max-w-md mx-auto border border-gray-100">
+              <div className="relative">
+                <div className="animate-spin rounded-full h-20 w-20 border-4 border-purple-200 border-t-purple-600 mx-auto mb-6"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-2xl">📚</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Loading Books...</h3>
+              <p className="text-gray-600">Discovering amazing reads for you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    }>
+      <BooksContent />
+    </Suspense>
   )
 }
