@@ -14,12 +14,13 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white py-24 overflow-hidden">
+      <section className="relative bg-linear-to-br from-indigo-900 via-purple-900 to-pink-900 text-white py-24 overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-blue-400 via-purple-500 to-pink-500"></div>
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pink-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-pink-500/5 rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -83,12 +84,12 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-20 bg-linear-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Why Choose{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 BookTracker?
               </span>
             </h2>
@@ -117,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 text-white relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-purple-900 via-indigo-900 to-blue-900 text-white relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl"></div>
@@ -129,7 +130,7 @@ export default function Home() {
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Join Our{' '}
-              <span className="bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
                 Reading Community
               </span>
             </h2>
@@ -150,7 +151,7 @@ export default function Home() {
                   <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                     {stat.icon}
                   </div>
-                  <div className={`text-4xl font-bold mb-2 bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}>
+                  <div className={`text-4xl font-bold mb-2 bg-linear-to-r ${stat.gradient} bg-clip-text text-transparent`}>
                     {stat.number}
                   </div>
                   <div className="text-gray-200 font-medium">{stat.label}</div>
@@ -163,7 +164,7 @@ export default function Home() {
           <div className="text-center mt-16">
             <Link
               href="/login"
-              className="group inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
               <span className="mr-2">🚀</span>
               Join the Community
@@ -176,14 +177,14 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-purple-50 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+      <section className="py-20 bg-linear-to-br from-gray-50 to-purple-50 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-full h-1 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               How It{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Works
               </span>
             </h2>
@@ -220,9 +221,9 @@ export default function Home() {
               }
             ].map((step, index) => (
               <div key={index} className="group text-center animate-fadeInUp" style={{animationDelay: `${index * 0.2}s`}}>
-                <div className={`relative bg-gradient-to-br ${step.bgGradient} p-8 rounded-3xl shadow-elegant hover-lift border border-gray-100 hover:border-purple-200 transition-all duration-300 overflow-hidden`}>
+                <div className={`relative bg-linear-to-br ${step.bgGradient} p-8 rounded-3xl shadow-elegant hover-lift border border-gray-100 hover:border-purple-200 transition-all duration-300 overflow-hidden`}>
                   {/* Step number circle */}
-                  <div className={`absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br ${step.gradient} rounded-full flex items-center justify-center shadow-lg`}>
+                  <div className={`absolute -top-4 -right-4 w-16 h-16 bg-linear-to-br ${step.gradient} rounded-full flex items-center justify-center shadow-lg`}>
                     <span className="text-2xl font-bold text-white">{step.step}</span>
                   </div>
                   
@@ -249,8 +250,8 @@ export default function Home() {
           {/* Connection lines for desktop */}
           <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl">
             <div className="flex justify-between items-center px-20">
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-              <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+              <div className="w-24 h-1 bg-linear-to-r from-blue-500 to-purple-500 rounded-full"></div>
+              <div className="w-24 h-1 bg-linear-to-r from-purple-500 to-pink-500 rounded-full"></div>
             </div>
           </div>
         </div>
@@ -262,7 +263,7 @@ export default function Home() {
           <div className="text-center mb-12 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Popular{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Categories
               </span>
             </h2>
@@ -337,7 +338,7 @@ export default function Home() {
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Popular Books{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 This Month
               </span>
             </h2>
@@ -380,8 +381,8 @@ export default function Home() {
               <div key={index} className="group animate-fadeInUp" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="bg-white p-8 rounded-3xl text-center shadow-elegant hover-lift border border-gray-100 hover:border-purple-200 transition-all duration-300 relative overflow-hidden">
                   {/* Decorative elements */}
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full -translate-y-10 translate-x-10"></div>
-                  <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full translate-y-8 -translate-x-8"></div>
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-linear-to-br from-purple-100 to-pink-100 rounded-full -translate-y-10 translate-x-10"></div>
+                  <div className="absolute bottom-0 left-0 w-16 h-16 bg-linear-to-br from-blue-100 to-purple-100 rounded-full translate-y-8 -translate-x-8"></div>
                   
                   <div className="relative z-10">
                     <div className="w-24 h-32 mx-auto mb-6 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300 relative">
@@ -412,7 +413,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/books"
-              className="group inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-2xl font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-2xl font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
               <span className="mr-2">📚</span>
               Explore All Books
@@ -425,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50 relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-purple-50 to-pink-50 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-64 h-64 bg-purple-200/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-pink-200/20 rounded-full blur-3xl"></div>
@@ -435,7 +436,7 @@ export default function Home() {
           <div className="text-center mb-16 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               What Our{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Readers Say
               </span>
             </h2>
@@ -487,7 +488,7 @@ export default function Home() {
                   </blockquote>
                   
                   <div className="flex items-center">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${testimonial.gradient} rounded-full flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-16 h-16 bg-linear-to-br ${testimonial.gradient} rounded-full flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform duration-300`}>
                       {testimonial.avatar}
                     </div>
                     <div>
@@ -497,7 +498,7 @@ export default function Home() {
                   </div>
                   
                   {/* Decorative elements */}
-                  <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full -translate-y-10 -translate-x-10 opacity-50"></div>
+                  <div className="absolute bottom-0 left-0 w-20 h-20 bg-linear-to-br from-purple-100 to-pink-100 rounded-full -translate-y-10 -translate-x-10 opacity-50"></div>
                 </div>
               </div>
             ))}
@@ -518,12 +519,12 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-indigo-900 via-purple-900 to-pink-900 text-white relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-pink-500/5 rounded-full blur-3xl"></div>
         </div>
         
         {/* Floating elements */}
@@ -542,7 +543,7 @@ export default function Home() {
             <div className="text-6xl mb-8">📬</div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Stay in the{' '}
-              <span className="bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
                 Reading Loop
               </span>
             </h2>
@@ -563,7 +564,7 @@ export default function Home() {
                 </div>
                 <button
                   type="submit"
-                  className="group bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
+                  className="group bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
                 >
                   <span className="mr-2">📧</span>
                   Subscribe

@@ -24,7 +24,7 @@ export default function Footer() {
     })
   }
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white relative overflow-hidden">
+    <footer className="bg-linear-to-r from-gray-900 via-purple-900 to-indigo-900 text-white relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
@@ -47,7 +47,7 @@ export default function Footer() {
                     sizes="64px"
                   />
                 </div>
-                <span className="text-3xl font-bold bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
+                <span className="text-3xl font-bold bg-linear-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
                   BookTracker
                 </span>
               </div>
@@ -59,8 +59,8 @@ export default function Footer() {
               <div className="flex space-x-4">
                 {/* Facebook */}
                 <a
-                  href="#"
-                  className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl"
+                  href="https://www.facebook.com/KCYY77"
+                  className="w-12 h-12 bg-linear-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl"
                   aria-label="Facebook"
                 >
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -70,8 +70,8 @@ export default function Footer() {
 
                 {/* X (Twitter) */}
                 <a
-                  href="#"
-                  className="w-12 h-12 bg-gradient-to-br from-gray-800 to-black rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl"
+                  href="https://x.com/"
+                  className="w-12 h-12 bg-linear-to-r from-gray-800 to-black rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl"
                   aria-label="X"
                 >
                   <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -79,21 +79,10 @@ export default function Footer() {
                   </svg>
                 </a>
 
-                {/* Instagram */}
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl"
-                  aria-label="Instagram"
-                >
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.718-9.469c-.49 0-.875-.385-.875-.875s.385-.875.875-.875.875.385.875.875-.385.875-.875.875zm-4.167 9.469c-2.26 0-4.094-1.834-4.094-4.094s1.834-4.094 4.094-4.094 4.094 1.834 4.094 4.094-1.834 4.094-4.094 4.094z"/>
-                  </svg>
-                </a>
-
                 {/* LinkedIn */}
                 <a
-                  href="#"
-                  className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl"
+                  href="https://www.linkedin.com/in/iftekharulalam10/"
+                  className="w-12 h-12 bg-linear-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-xl"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -105,7 +94,7 @@ export default function Footer() {
             
             {/* Quick Links */}
             <div>
-              <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold mb-6 bg-linear-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
                 Quick Links
               </h3>
               <ul className="space-y-4">
@@ -131,7 +120,7 @@ export default function Footer() {
             
             {/* Features */}
             <div>
-              <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold mb-6 bg-linear-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
                 Features
               </h3>
               <ul className="space-y-4">
@@ -157,7 +146,7 @@ export default function Footer() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-300 mb-4 md:mb-0">
-                <p>&copy; 2024 BookTracker. All rights reserved.</p>
+                <p>&copy; 2026 BookTracker. All rights reserved.</p>
               </div>
               <div className="flex items-center space-x-6 text-sm text-gray-400">
                 <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
@@ -182,7 +171,7 @@ export default function Footer() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 z-50 animate-fadeInUp"
+          className="fixed bottom-8 right-8 bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 z-50 animate-fadeInUp"
           aria-label="Scroll to top"
         >
           <svg 

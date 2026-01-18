@@ -17,10 +17,9 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-white shadow-2xl relative overflow-hidden">
+    <nav className="bg-linear-to-r from-indigo-900 via-purple-900 to-pink-900 text-white shadow-2xl relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-black opacity-20"></div>
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex justify-between h-16">
@@ -35,41 +34,41 @@ export default function Navbar() {
                   sizes="40px"
                 />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-linear-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
                 BookTracker
               </span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             <Link href="/" className="relative px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 group">
               <span className="relative z-10">Home</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
             <Link href="/books" className="relative px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 group">
               <span className="relative z-10">Books</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
             {isLoggedIn ? (
               <>
                 <Link href="/dashboard" className="relative px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 group">
                   <span className="relative z-10">Dashboard</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Link>
                 <Link href="/add-book" className="relative px-3 py-2 rounded-lg hover:bg-white/10 transition-all duration-300 group">
                   <span className="relative z-10">Add Book</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Link>
                 <button
                   onClick={handleLogout}
-                  className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 px-6 py-2 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                  className="bg-linear-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 px-6 py-2 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                 >
                   Logout
                 </button>
               </>
             ) : (
-              <><Link href="/login" className="block px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-md transition-colors">
+              <><Link href="/login" className="block px-3 py-2 bg-linear-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-md transition-colors">
                   Login
                 </Link>
                
@@ -110,13 +109,13 @@ export default function Navbar() {
                   </Link>
                   <button
                     onClick={handleLogout}
-                    className="block w-full text-left px-3 py-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-md transition-colors"
+                    className="block w-full text-left px-3 py-2 bg-linear-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-md transition-colors"
                   >
                     Logout
                   </button>
                 </>
               ) : (
-              <><Link href="/login" className="block px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-md transition-colors">
+              <><Link href="/login" className="block px-3 py-2 bg-linear-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-md transition-colors">
                   Login
                 </Link>
                 

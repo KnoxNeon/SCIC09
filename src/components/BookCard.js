@@ -12,7 +12,7 @@ export default function BookCard({ book }) {
           className="object-cover group-hover:scale-110 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         <div className="absolute top-3 right-3">
           <span className="bg-white/90 backdrop-blur-sm text-gray-800 text-xs px-2 py-1 rounded-full font-medium">
             {book.genre}
@@ -28,7 +28,7 @@ export default function BookCard({ book }) {
         <p className="text-gray-600 text-sm mb-4 line-clamp-2 leading-relaxed">{book.description}</p>
         
         <div className="flex items-center justify-between mb-4">
-          <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <span className="text-2xl font-bold bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             ${book.price}
           </span>
           <div className="flex items-center bg-yellow-50 px-2 py-1 rounded-full">
@@ -44,7 +44,7 @@ export default function BookCard({ book }) {
 
         <Link
           href={`/books/${book.id}`}
-          className="block w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-center py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          className="block w-full bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-center py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
         >
           View Details
         </Link>
